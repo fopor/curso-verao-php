@@ -15,13 +15,13 @@
 <body>
 <nav class="navbar navbar-inverse">
   <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="login.php">Login</a></li>
+    <li><a href="index.php">Home</a></li>
+    <li class="active"><a href="#">Login</a></li>
     <li><a href="register.php">Cadastro</a></li>
   </ul>
 </nav>
 
-<h1>Bem-vindo</h1>
+<h1>Login do usuário</h1>
 
 </body>
 </html>
