@@ -1,7 +1,13 @@
-#Site com formulario para cadastro de cliente, perfil de admnistrador para visualizar lista de clientes
+# Site com formulario para cadastro de cliente, perfil de admnistrador para visualizar lista de clientes
 
-Cada cliente tem uma lista de itens associada a ele.
+## Pretende-se contemplar no projeto:
 
-A definir se carrinho ou se lista de pedidos fixa
+* tela para login do cliente
+* tela para login efetuado com successo
+* tela para administrador ver lista de cadastros
+* tela para o cliente efetuar o cadastro
+* * tela de cadastro deve exibir quais campos foram completados de forma incorreta
 
+* requerimento:
+* * mysqli 
 
