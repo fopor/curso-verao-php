@@ -3,7 +3,7 @@
 
     $host = 'localhost';
     $user = 'root';
-    $pass = 'fopor_pass';
+    $pass = 'senha';
     $base = 'cliente-base';
 
     if($debug) {
