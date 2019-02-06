@@ -8,16 +8,32 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class LuckyController extends AbstractController{
 	/**
-	 * @Route("/lucky/number")
+	 * @Route("/lucky/number", name="app_lucky_number")
 	 */
 
-	public function number()
-	{
+	public function number(){
 		$number = random_int(0, 100);
 
-		return new Response(
-			'<html><body>Lucky number: '.$number.'</body></html>'
-		);
+		return $this->render('lucky/number.html.twig', [
+			'number' => $number,
+		]);	 
 	}
+
+	/**
+	 * @Route("/lucky/number/{num}")
+	 */
+	public function show($num){
+		if($num === "-1") {
+
+			return $this->render('lucky/number.html.twig', [
+				'number' => "olar",
+			]);
+		}
+
+		return $this->render('lucky/number.html.twig', [
+			'number' => $num,
+		]);
+	}	
+
 }
 
